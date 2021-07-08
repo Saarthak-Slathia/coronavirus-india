@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Newsreader&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  color: #000;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Josefin Sans", "Roboto", Arial, Helvetica, sans-serif;
+  transition: all .3s ease;
+  scroll-behavior: smooth;
+}
+
+body, html{
+  overflow-x: hidden;
+  width: 100%;
+}
+
+h2#title{
+  color: red;
+  animation: fade 0.7s linear 1;
+  font-family: "Josefin Sans", Arial;
+  text-align: center;
+  letter-spacing: 1.5px;
+}
+
+h2{
+  text-transform: uppercase;
+  margin: 1rem;
+  color: aliceblue;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+section#main{
+  background-color: rgb(255, 255, 255);
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.subtitle{
+  color: #20cc68;
+  animation: fade 0.7s linear 1;
+}
+
+#main ul{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+i{
+  color: #ff3324;
+  animation: fade 0.7s linear 1;
+}
+
+#main #scroll h3{
+  color: #ff3324;
+  font-size: 25px;
+  font-family: "Josefin Sans", Roboto, Arial;
+  margin-top: 5rem;
+  animation: fade 0.7s linear 1;
+}
+
+#main #scroll h3:hover{
+  letter-spacing: 2px;
+}
+
+.animation img{
+  position: relative;
+  top: 2.5rem;
+  animation: rotate 6s linear infinite;
+}
+
+#title{
+  font-family: 'Josefin Sans', sans-serif;
+  text-transform: capitalize;
+  font-size: 2em;
+  animation: fade 0.7s linear 1;
+}
+
+.card{
+  list-style: none;
+  height: 15%;
+  background-color: transparent;
+  padding: 1.5rem;
+  border-radius: 40px 40px 40px 0;
+  margin: 1rem;
+  margin-top: 8rem;
+  animation: fade 0.7s linear 1;
+  color: white;
+  width: 300px;
+  box-shadow: 0 7px 15px rgba(0, 0, 0, 0.3);
+}
+
+li:hover{
+  transform: translateY(-10%);
+  cursor: default;
+}
+li:nth-child(3) .card_name{
+  color: #20cc68!important;
+}
+li:nth-child(1) .card_name{
+  color: #ff3324!important;
+}
+li:nth-child(4) .card_name{
+  color: silver!important;
+}
+li small{
+  color: aqua!important;
+}
+
+.bluecolor{
+  color: blueviolet;
+}
+
+.card_name{
+  font-size: 30px;
+  font-family: 'Josefin Sans', sans-serif;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+#main div{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+ul{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.card_total{
+  letter-spacing: 1px;
+  font-family: "Josefin Sans", Arial;
+  padding: 1rem 0;
+  text-align: center;
+  width: 100%;
+  color: rgb(255, 187, 0);
+  font-weight: 600;
+  font-size: 40px;
+  text-shadow: 3px 3px 5px rgba(255, 255, 255, 0.3), -3px -3px 5px rgba(255, 255, 255, 0.3);
+}
+
+#totalsmall{
+  font-size: 15px;
+  font-weight: 600;
+}
+
+@media (max-width: 999px){
+  #main ul li.card{
+    width: 100%!important;
+    margin: 0;
+    box-shadow: none;
+    background-color: transparent;
+  }
+
+  #title{
+    margin-top: 2rem;
+    line-height: 1em;
+  }
+
+  #main ul{
+    margin: 1rem 0;
+  }
+  
+  section#main{
+    height: auto;
+    padding-bottom: 2rem;
+  }
+
+  .card_name{
+    font-size: 15px;
+  }
+
+  .card_total{
+    font-size: 25px;
+  }
+
+  #title{
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    width: 75%;
+    font-size: 20px;
+    text-align: center;
+  }
+}
+
+@keyframes rotate{
+  from{
+    transform: rotate(0deg)
+  }
+  
+  to{
+    transform: rotate(360deg)
+  }
+}
+
+.chart{
+  width: 100%;
+  padding: 5rem 25rem;
+}
+
+@keyframes fade{
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0,20px,0);
+    transform: translate3d(0,20px,0);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+  }
+}
+
+/* Statewise Cases */
+#statewise{
+  width: 100%;
+  /* background-color: wheat; */
+  margin: 5em 0;
+  padding: 2rem;
+}
+
+footer{
+  padding: 1rem 0;
+  background-color: aliceblue;
+}
+
+footer p{
+  width: 100%;
+  color: #000;
+  font-weight: 600;
+  letter-spacing: 1px;
+  font-family: Roboto, Arial;
+  text-align: center;
+}
+
+small{
+  color: rgb(255, 0, 234);
+  margin-left: 0.5rem;
+}
+
+small::before{
+  content: '\f062';
+  padding-right: 0.1rem;
+  font-family: "FontAwesome";
+}
+
+footer p a{
+  text-decoration: none;
+  color: #000;
+}
+
+footer p a:hover{
+  color: darkgrey;
+}
+
+small.no::before{
+  content: ""!important;
+}

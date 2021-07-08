@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Newsreader&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all .3s ease-in-out;
+    scroll-behavior: smooth;
+    font-family: "Josefin Sans", Arial;
+}
+
+.box{
+    width: 10%;
+}
+
+.mainDiv{
+    width: 100%;
+    display: flex;
+    padding: 1rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.state{
+    width: 30%;
+    font-size: 21px;
+    line-height: 1;
+}
+
+.statedata{
+    color: brown;
+    font-size: 21px;
+}
+
+.statedata:nth-child(1){
+    color: #00000fff;
+}
+
+.statedata:nth-child(2){
+    color: #ff3324;
+}
+
+.statedata:nth-child(3){
+    color: blue;
+}
+
+.statedata:nth-child(4){
+    color: #20cc68;
+}
+
+.statedata:nth-child(5){
+    color: silver;
+}
+
+@media (max-width: 999px){
+    .mainDiv{
+        flex-direction: column;
+        background-color: #ffe4bb;
+        border-radius: 50px;
+        margin: 1rem 0;
+        padding: 2rem;
+    }
+
+    .state{
+        text-align: center;
+        margin-bottom: 1rem;
+        width: 100%;
+    }
+
+    .box{
+        width: 100%;
+        margin: 0.7rem 0;
+        text-align: center;
+    }
+}
