@@ -3,7 +3,7 @@
 Live Site [Here](https://sars-cov2-india.netlify.app/).
 
 ## API
-Data [api](https://api.covid19india.org/).
+Data [api](https://api.covid19india.org/) used in the project from [https://api.covid19india.org](https://api.covid19india.org/).
 
 ---
 
