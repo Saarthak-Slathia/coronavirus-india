@@ -7,4 +7,4 @@ Data [api](https://api.covid19india.org/) used in the project from [https://api.
 
 ---
 
-Get Vaccinated, Wear Mask, Stay Safe !!! 🎉😷💉
+Get Vaccinated, Wear Mask, Stay Safe !!! 🎉😷💉👍🏻
